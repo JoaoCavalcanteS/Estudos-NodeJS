@@ -1,5 +1,9 @@
 //criou uma constante que vem no método http
 const http = require('http');
+const host = 'http://localhost';
+const port = 3000;
+
+
 
 //Deve receber parametros
 //Voce esta mandando executar um servidor http.createServer()
@@ -12,4 +16,4 @@ const http = require('http');
 //retorna uma resposta => RES
 http.createServer((req, res)=>{
     res.end('<h1>Workink</h1>')
-}).listen(3000, ()=>console.log('Server is Running'));
+}).listen(port, ()=>console.log(`Server is Running in ${host}:${port}`));
