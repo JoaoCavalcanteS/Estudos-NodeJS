@@ -19,6 +19,8 @@ setInterval(()=>{
     console.clear();//antes de imprimir, ele limpa
     console.table(stats);
 
+    exports.stats = stats;//exportando o módulo, que recebe o objeto que criamos
+
 }, 1000);
 
 
